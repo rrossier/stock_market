@@ -1,0 +1,11 @@
+login time: 17.3441910744 ms
+login time: 17.3122370243 ms
+login time: 8.70216798782 ms
+authenticate time: 8.7084441185 ms
+create hash time: 8.95471596718 ms
+authenticate time: 0.00712895393372 ms
+authenticate time: 0.00734305381775 ms
+authenticate time: 0.277806997299 ms
+create hash time: 0.272509098053 ms
+authenticate time: 0.275737047195 ms
+create hash time: 0.272089004517 ms

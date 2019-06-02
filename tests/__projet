@@ -1,0 +1,84 @@
+
+# Arborescence
+
+- .htaccess
+- index.php
+- login.php
+- logout.php
+- main.php
+- hall.php
+- brokers.php
+- footer.php
+- navbar.php
+- header.php
+- generic_market.php
+- generic_market_multipages.php
+- modal.php
+- plan_orders.php
+- help.php
+- 404.php
+- markets/
+-- srd.php
+-- sp500.php
+-- hsi.php
+-- dowjones.php
+-- nasdaq.php
+-- ftse.php
+-- forex.php
+- cron/
+-- markets.php
+---- update prices from yahoo finance, insert db.
+---- every minute
+-- firms.php
+---- compute share value, update historique, pays fees
+---- every hour
+-- traders.php
+---- compute best traders, update historique
+---- every day
+-- brokers.php
+---- compute best brokers, update historique, pays fees
+---- every day
+-- gamemaster.php
+---- update historique
+---- every day
+- data/
+-- markets/
+-- firms/
+-- traders/
+-- brokers/
+-- gamemaster/
+- firms/
+-- list.php
+-- create.php
+-- manage.php
+-- trading.php
+- stocks/
+-- index.php
+---- display information about stock when ticker found
+- traders/
+-- index.php
+---- public profile of traders
+-- portfolio.php
+- brokers/
+-- index.php
+---- public profile of brokers
+- ajax/
+-- action_stock.php
+-- ajaxRegisterFirm.php
+-- get.php
+-- getfees.php
+-- isNameAvailable.php
+-- join_firm.php
+-- maj_firms.php
+-- promote.php
+-- retrieve.php
+-- search_firm.php
+-- update_notifs.php
+- forums/
+- css/
+- img/
+- config/
+-- fonctions.php
+-- password.php
+-- config.php
+- classes/

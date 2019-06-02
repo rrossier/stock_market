@@ -1,0 +1,19 @@
+<?php
+include('../main/header.php');
+@session_start();
+if(isset($_SESSION['user'])){
+$tp=new User($_SESSION['user']['id']);
+$tp->__set('type',$_SESSION['user']['type']);
+$user=$tp->create();
+$id=$user->__get('id');
+$hash=$_SESSION['user']['hash'];
+$name=$user->__get('name');
+}
+else{
+  header('Location:../');
+}
+if($user->get_type()!='trader'){
+  header('Location:../');
+}
+include("generic_market_multipages.php");
+?>
